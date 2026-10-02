@@ -15,8 +15,6 @@ body {
   padding: 0 16px 48px;
 }
 
-/* Cabeçalho */
-
 .cabecalho-ifrn {
   display: flex;
   align-items: center;
@@ -38,8 +36,6 @@ body {
   margin: 0;
 }
 
-/* Barra de navegação */
-
 .barra-navegacao {
   display: flex;
   gap: 8px;
@@ -60,8 +56,6 @@ body {
 .barra-navegacao a:hover {
   background-color: #e8f5e9;
 }
-
-/* Página inicial */
 
 .pagina-inicial {
   background-color: #ffffff;
@@ -96,14 +90,14 @@ body {
   background-color: #2e7d32;
 }
 
-/* Títulos das páginas de listagem e cadastro */
 
 .pagina-listagem h2,
-.pagina-cadastro h2 {
+.pagina-cadastro h2,
+.pagina-listagem-professores h2,
+.pagina-cadastro-professor h2 {
   color: #2e7d32;
 }
 
-/* Mensagem de erro */
 
 .mensagem-erro {
   border: 2px solid #c62828;
@@ -118,9 +112,10 @@ body {
   margin: 0;
 }
 
-/* Formulário */
 
-.formulario-aluno {
+
+.formulario-aluno,
+.formulario-professor {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -156,7 +151,8 @@ body {
   box-shadow: 0 0 0 2px rgba(104, 185, 46, 0.3);
 }
 
-.formulario-aluno button {
+.formulario-aluno button,
+.formulario-professor button {
   align-self: flex-start;
   background-color: #68b92e;
   color: #ffffff;
@@ -168,19 +164,20 @@ body {
   cursor: pointer;
 }
 
-.formulario-aluno button:hover {
+.formulario-aluno button:hover,
+.formulario-professor button:hover {
   background-color: #2e7d32;
 }
 
-/* Lista de alunos */
-
-.lista-alunos {
+.lista-alunos,
+.lista-professores {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
 }
 
-.card-aluno {
+.card-aluno,
+.card-professor {
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-left: 4px solid #2e7d32;
@@ -188,17 +185,20 @@ body {
   padding: 16px;
 }
 
-.card-aluno h3 {
+.card-aluno h3,
+.card-professor h3 {
   margin: 0 0 8px;
   color: #2e7d32;
 }
 
-.card-aluno p {
+.card-aluno p,
+.card-professor p {
   margin: 4px 0;
   font-size: 0.9rem;
 }
 
-.card-aluno button {
+.card-aluno button,
+.card-professor button {
   margin-top: 12px;
   background-color: #ffffff;
   color: #c62828;
@@ -209,7 +209,8 @@ body {
   cursor: pointer;
 }
 
-.card-aluno button:hover {
+.card-aluno button:hover,
+.card-professor button:hover {
   background-color: #c62828;
   color: #ffffff;
 }

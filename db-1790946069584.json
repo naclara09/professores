@@ -17,14 +17,6 @@
       "cpf": "987.654.321-00",
       "disciplina": "Programação para Internet",
       "data_admissao": "2022-03-01"
-    },
-    {
-      "nome": "aninha",
-      "email": "anna.holanda@escolar.ifrn.edu.br",
-      "cpf": "128.432.874-05",
-      "disciplina": "PPI",
-      "data_admissao": "2008-07-09",
-      "id": 2
     }
   ]
 }
